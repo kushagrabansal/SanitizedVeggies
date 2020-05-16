@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Veg Store</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+	
+	<!-- External StyleSheet -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+    <header class="header shop">
+		
+		<!--For mobile-->
+		<div class="mobile-topbar">
+			<div class="ti-menu" onclick="showNav()">
+			</div>
+			<div class="btns">
+				<button>Login</button>
+				<button>Register</button>
+			</div>
+		</div>
+		<!-- End Topbar -->
+		<div class="middle-inner">
+			<div class="container">
+				<div class="row">
+					<!--For mobile view -->
+
+					<div class="col-lg-2 col-md-2 col-sm-12">
+						<!-- Logo -->
+						<div class="logo">
+							<a href="index.html">LOGO</a>
+						</div>
+						<!--/ End Logo -->
+						<!-- Search Form -->
+							<div class="search-top">
+									<input type="text" placeholder="Search here..." name="search">
+									<button value="search" type="submit"><i class="ti-search"></i></button>
+									<button value="search" type="submit"><i class="ti-location-pin"></i></button>
+							</div>
+							
+						<!--/ End Search Form -->
+					</div>
+					<!--For desktop view -->
+
+					<div class="form-container col-lg-8 col-md-7 col-12">
+						<!-- <div class="search-bar-top">
+							<div class="search-bar">
+								<select>
+									<option selected="selected">All Category</option>
+									<option>watch</option>
+									<option>mobile</option>
+									<option>kid’s item</option>
+								</select>
+								<form>
+									<input name="search" placeholder="Search Products Here....." type="search">
+									<div class="u-btns">
+									<button class="btnn"><i class="ti-search"></i></button>
+									<button class="btnn"><i class="ti-location-pin"></i></button>
+									</div>
+								</form>
+							</div>
+						</div> -->
+					</div>
+					<div class="col-lg-2 col-md-3 col-12">
+						<div class="right-bar">
+							<!-- Search Form -->
+							<div class="sinlge-bar">
+								<a href="#" class="single-icon"><i class="ti-heart" aria-hidden="true"></i></a>
+							</div>
+							<div class="sinlge-bar">
+								<a href="#" class="single-icon"><i class="ti-user" aria-hidden="true"></i></a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+    <!--/ End Header -->
+    
+    <div class="container-fluid">
+        <div class="row no-gutter">
+          <div class=" bg-image">
+
+		  </div>
+          <div class="col-md-8 col-lg-5 login-form">
+            <div class="login d-flex align-items-center py-1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10 col-lg-10 mx-auto">
+                    <h3 class="login-heading mb-4">Welcome back!</h3>
+                    <form>
+						
+                      <div class="form-label-group">
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                        <label for="inputEmail">Email address</label>
+                      </div>
+      
+                      <div class="form-label-group">
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        <label for="inputPassword">Password</label>
+                      </div>
+      
+                      <div class="custom-control custom-checkbox mb-3">
+                        <input type="checkbox" id="customCheck1">
+                        <label class="custom-control-label custom-checkbox" for="customCheck1">Remember password</label>
+					  </div>
+					  
+                      <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                      <div class="text-center">
+						<a class="small" href="#">Forgot password?</a>
+					  </div>
+					  <div class="register-btn">
+						<button  data-toggle="modal" data-target="#customerModal">Register as a new user</button>
+					  </div>
+
+						<hr>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+								 <a href="#" class="btn btn-primary facebook">Login with facebook<i class="ti-facebook"></i> </a> 
+							</div>
+							<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6"> 
+								<a href="#" class="btn btn-primary google-plus">Login using Google <i class="ti-google"></i> </a> 
+							</div>
+						</div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	  </div>
+	  
+	  <!--Customer registeration modal-->
+	  <div class="modal fade" id="customerModal" tabindex="-1" role="dialog" aria-labelledby="customerModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="f-wrapper">
+		<form class="myForm">
+		  <div class="formInstructionsDiv formElement">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			<h3 class="formTitle" >Customer Sign Up</h3>
+			<p class="instructionsText">Please fill in this form to create an account</p>
+		   </div>
+		  <div class="fillContentDiv formElement">
+		  <div class="names formContentElement">  
+			<input class="inputRequest" type="text" placeholder="First Name"/>
+	  
+			<input class="inputRequest" type="text" placeholder="Last Name"/>
+	  
+		 </div>
+			<label>
+			  <input class="inputRequest formContentElement" type="text" placeholder="Email">
+			</label>
+			<label>
+			  <input class="inputRequest formContentElement" type="number" placeholder="Phone">
+			</label>
+			<label>
+			  <input class="inputRequest formContentElement" type="password" placeholder="Enter password">
+			</label>
+			<label>
+			  <input class="inputRequest formContentElement" type="password" placeholder="Confirm password">
+			</label>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+					<a href="#" class="btn btn-primary facebook padding-both-side"> <i class="ti-facebook"></i> </a> 
+			   </div>
+			   <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6"> 
+				   <a href="#" class="btn btn-primary google-plus padding-both-side"> <i class="ti-google"></i> </a> 
+			   </div>
+			</div>
+		  <div class="submitButtonDiv formElement">
+		  <button class="submitButton">Sign Up</button>
+		  </div>
+		</form>
+	  </div>
+	  </div>
+	</div>
+
+		<!-- Jquery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="js/popper.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

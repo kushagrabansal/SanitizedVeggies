@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<head>
+	<!-- Meta Tag -->
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title Tag  -->
+    <title>Home | Veg store</title>
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+	
+	<!-- External StyleSheet -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+	
+	
+</head>
+<body>
+
+	
+	
+	<!-- Header -->
+	<header class="header shop">
+		
+		<!--For mobile-->
+		<div class="mobile-topbar">
+			<div class="ti-menu" onclick="showNav()">
+			</div>
+			<div class="btns">
+				<button>Login</button>
+				<button>Register</button>
+			</div>
+			<div class="mobile-nav hide">	
+				<ul>	
+					<li class="active"><a href="#">Home</a></li>	
+					<li><a href="#">Product</a></li>												
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Shop</a></li>																						
+					<li><a href="#">Blog</a>
+					</li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- End Topbar -->
+		<div class="middle-inner">
+			<div class="container">
+				<div class="row">
+					<!--For mobile view -->
+
+					<div class="col-lg-2 col-md-2 col-sm-12">
+						<!-- Logo -->
+						<div class="logo">
+							<a href="index.html">LOGO</a>
+						</div>
+						<!--/ End Logo -->
+						<!-- Search Form -->
+							<div class="search-top">
+									<input type="text" placeholder="Search here..." name="search">
+									<button value="search" type="submit"><i class="ti-search"></i></button>
+									<button value="search" type="submit"><i class="ti-location-pin"></i></button>
+							</div>
+							
+						<!--/ End Search Form -->
+					</div>
+					<!--For desktop view -->
+
+					<div class="form-container col-lg-8 col-md-7 col-12">
+						<div class="search-bar-top">
+							<div class="search-bar">
+								<form>
+									<input name="search" placeholder="Search Products Here....." type="search">
+									<div class="u-btns">
+									<button class="btnn"><i class="ti-search"></i></button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-12">
+						<div class="right-bar">
+							<!-- Search Form -->
+							<div class="sinlge-bar">
+								<a href="#" class="single-icon"><i class="ti-heart" aria-hidden="true"></i></a>
+							</div>
+							<div class="sinlge-bar">
+								<a href="#" class="single-icon"><i class="ti-user" aria-hidden="true"></i></a>
+							</div>
+							<div class="sinlge-bar shopping">
+								<a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
+								<!-- Shopping Item -->
+								<div class="shopping-item">
+									<div class="dropdown-cart-header">
+										<span>2 Items</span>
+										<a href="cart.html">View Cart</a>
+									</div>
+									<ul class="shopping-list">
+										<li>
+											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+											<h4><a href="#">10kg Rice</a></h4>
+											<p class="quantity">1x - <span class="amount">₹399.00</span></p>
+										</li>
+										<li>
+											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+											<h4><a href="#">20Kg Wheat</a></h4>
+											<p class="quantity">1x - <span class="amount">₹650.00</span></p>
+										</li>
+									</ul>
+									<div class="bottom">
+										<div class="total">
+											<span>Total</span>
+											<span class="total-amount">₹1049.00</span>
+										</div>
+										<a href="checkout.html" class="btn animate">Checkout</a>
+									</div>
+								</div>
+								<!--/ End Shopping Item -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--/ End Header -->
+
+	<!--Customer Registeration Modal-->
+	<div class="modal fade" id="customerModal" tabindex="-1" role="dialog" aria-labelledby="customerModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="f-wrapper">
+		<form class="myForm">
+		  <div class="formInstructionsDiv formElement">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			<h3 class="formTitle" >Customer Sign Up</h3>
+			<p class="instructionsText">Please fill in this form to create an account</p>
+		   </div>
+		  <div class="fillContentDiv formElement">
+		  <div class="names formContentElement">  
+			<input class="inputRequest" type="text" placeholder="First Name"/>
+	  
+			<input class="inputRequest" type="text" placeholder="Last Name"/>
+	  
+		 </div>
+			<label>
+			  <input class="inputRequest formContentElement" type="text" placeholder="Email">
+			</label>
+			<label>
+			  <input class="inputRequest formContentElement" type="number" placeholder="Phone">
+			</label>
+			<label>
+			  <input class="inputRequest formContentElement" type="password" placeholder="Enter password">
+			</label>
+			<label>
+			  <input class="inputRequest formContentElement" type="password" placeholder="Confirm password">
+			</label>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+					<a href="#" class="btn btn-primary facebook padding-both-side"> <i class="ti-facebook"></i> </a> 
+			   </div>
+			   <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6"> 
+				   <a href="#" class="btn btn-primary google-plus padding-both-side"> <i class="ti-google"></i> </a> 
+			   </div>
+			</div>
+		  <div class="submitButtonDiv formElement">
+		  <button class="submitButton">Sign Up</button>
+		  </div>
+		</form>
+	  </div>
+	  </div>
+	</div>
+	  <!--End of registeration Modal-->
+
+	  
+	
+	<!-- Slider Area -->
+	<section class="hero-slider">
+		<!-- Single Slider -->
+		<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+			  <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+			  <li data-target="#carouselIndicators" data-slide-to="1"></li>
+			  <li data-target="#carouselIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img class="d-block w-100" src="images/vegStoreBanner.jpg" alt="First slide">
+				<div class="hero-text">
+					<h1><span>Sanitized Vegetables</span>right on your doorstep</h1>
+					<div class="button">
+						<a href="#" class="btn">Shop Now!</a>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		<!--/ End Single Slider -->
+	</section>
+      
+<!--shop by popular categories-->
+<section class="pop-cat">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h2>Most selling products</h2>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+
+			  <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+				<div class="card">
+				  <img class="card-img" src="./images/kadyfinger.jpg" alt="Vans">
+				  <div class="card-img-overlay d-flex justify-content-end">
+					<a href="#" class="card-link text-danger like">
+					  <i class="fas fa-heart"></i>
+					</a>
+				  </div>
+				  <div class="card-body">
+					<h6 class="card-title">Lady finger(bhindi)</h6>
+					<h6 class="card-subtitle mb-2 text-muted">Code: VA33TXRJ5</h6>
+					<p class="card-text">
+					  <div class="options d-flex flex-fill">
+					  
+						<div class="quickview-content">
+					  <div class="quantity">
+						<div class="input-group">
+							<div class="button minus">
+								<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+									<i class="ti-minus"></i>
+								</button>
+							</div>
+							<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="1000" value="1">
+							<div class="button plus">
+								<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+									<i class="ti-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					</div>
+					<label>Quantity / KG</label>
+					</div>
+					<div class="buy d-flex justify-content-between align-items-center">
+					  <div class="price text-success"><h5 class="mt-4">₹15/kg</h5></div>
+					   <a href="#" class="btn btn-success mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+				<div class="card">
+				  <img class="card-img" src="./images/tomato.jpeg" alt="Vans">
+				  <div class="card-img-overlay d-flex justify-content-end">
+					<a href="#" class="card-link text-danger like">
+					  <i class="fas fa-heart"></i>
+					</a>
+				  </div>
+				  <div class="card-body">
+					<h6 class="card-title">Tomato(tamatar)</h6>
+					<h6 class="card-subtitle mb-2 text-muted">Code: VA38TXRJ9</h6>
+					<p class="card-text">
+					  <div class="options d-flex flex-fill">
+					  
+						<div class="quickview-content">
+					  <div class="quantity">
+						<div class="input-group">
+							<div class="button minus">
+								<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+									<i class="ti-minus"></i>
+								</button>
+							</div>
+							<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="1000" value="1">
+							<div class="button plus">
+								<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+									<i class="ti-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					</div>
+					<label>Quantity / KG</label>
+					</div>
+					<div class="buy d-flex justify-content-between align-items-center">
+					  <div class="price text-success"><h5 class="mt-4">₹25/kg</h5></div>
+					   <a href="#" class="btn btn-success mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+				<div class="card">
+				  <img class="card-img" src="./images/kadyfinger.jpg" alt="Vans">
+				  <div class="card-img-overlay d-flex justify-content-end">
+					<a href="#" class="card-link text-danger like">
+					  <i class="fas fa-heart"></i>
+					</a>
+				  </div>
+				  <div class="card-body">
+					<h6 class="card-title">Lady finger(bhindi)</h6>
+					<h6 class="card-subtitle mb-2 text-muted">Code: VA33TXRJ5</h6>
+					<p class="card-text">
+					  <div class="options d-flex flex-fill">
+					  
+						<div class="quickview-content">
+					  <div class="quantity">
+						<div class="input-group">
+							<div class="button minus">
+								<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+									<i class="ti-minus"></i>
+								</button>
+							</div>
+							<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="1000" value="1">
+							<div class="button plus">
+								<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+									<i class="ti-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					</div>
+					<label>Quantity / KG</label>
+					</div>
+					<div class="buy d-flex justify-content-between align-items-center">
+					  <div class="price text-success"><h5 class="mt-4">₹15/kg</h5></div>
+					   <a href="#" class="btn btn-success mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+				<div class="card">
+				  <img class="card-img" src="./images/tomato.jpeg" alt="Vans">
+				  <div class="card-img-overlay d-flex justify-content-end">
+					<a href="#" class="card-link text-danger like">
+					  <i class="fas fa-heart"></i>
+					</a>
+				  </div>
+				  <div class="card-body">
+					<h6 class="card-title">Tomato(tamatar)</h6>
+					<h6 class="card-subtitle mb-2 text-muted">Code: VA38TXRJ9</h6>
+					<p class="card-text">
+					  <div class="options d-flex flex-fill">
+					  
+						<div class="quickview-content">
+					  <div class="quantity">
+						<div class="input-group">
+							<div class="button minus">
+								<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+									<i class="ti-minus"></i>
+								</button>
+							</div>
+							<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="1000" value="1">
+							<div class="button plus">
+								<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+									<i class="ti-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					</div>
+					<label>Quantity / KG</label>
+					</div>
+					<div class="buy d-flex justify-content-between align-items-center">
+					  <div class="price text-success"><h5 class="mt-4">₹25/kg</h5></div>
+					   <a href="#" class="btn btn-success mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+
+			  <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+				<div class="card">
+				  <img class="card-img" src="./images/kadyfinger.jpg" alt="Vans">
+				  <div class="card-img-overlay d-flex justify-content-end">
+					<a href="#" class="card-link text-danger like">
+					  <i class="fas fa-heart"></i>
+					</a>
+				  </div>
+				  <div class="card-body">
+					<h6 class="card-title">Lady finger(bhindi)</h6>
+					<h6 class="card-subtitle mb-2 text-muted">Code: VA33TXRJ5</h6>
+					<p class="card-text">
+					  <div class="options d-flex flex-fill">
+					  
+						<div class="quickview-content">
+					  <div class="quantity">
+						<div class="input-group">
+							<div class="button minus">
+								<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+									<i class="ti-minus"></i>
+								</button>
+							</div>
+							<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="1000" value="1">
+							<div class="button plus">
+								<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+									<i class="ti-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					</div>
+					<label>Quantity / KG</label>
+					</div>
+					<div class="buy d-flex justify-content-between align-items-center">
+					  <div class="price text-success"><h5 class="mt-4">₹15/kg</h5></div>
+					   <a href="#" class="btn btn-success mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+				<div class="card">
+				  <img class="card-img" src="./images/tomato.jpeg" alt="Vans">
+				  <div class="card-img-overlay d-flex justify-content-end">
+					<a href="#" class="card-link text-danger like">
+					  <i class="fas fa-heart"></i>
+					</a>
+				  </div>
+				  <div class="card-body">
+					<h6 class="card-title">Tomato(tamatar)</h6>
+					<h6 class="card-subtitle mb-2 text-muted">Code: VA38TXRJ9</h6>
+					<p class="card-text">
+					  <div class="options d-flex flex-fill">
+					  
+						<div class="quickview-content">
+					  <div class="quantity">
+						<div class="input-group">
+							<div class="button minus">
+								<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+									<i class="ti-minus"></i>
+								</button>
+							</div>
+							<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="1000" value="1">
+							<div class="button plus">
+								<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+									<i class="ti-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					</div>
+					<label>Quantity / KG</label>
+					</div>
+					<div class="buy d-flex justify-content-between align-items-center">
+					  <div class="price text-success"><h5 class="mt-4">₹25/kg</h5></div>
+					   <a href="#" class="btn btn-success mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+				<div class="card">
+				  <img class="card-img" src="./images/kadyfinger.jpg" alt="Vans">
+				  <div class="card-img-overlay d-flex justify-content-end">
+					<a href="#" class="card-link text-danger like">
+					  <i class="fas fa-heart"></i>
+					</a>
+				  </div>
+				  <div class="card-body">
+					<h6 class="card-title">Lady finger(bhindi)</h6>
+					<h6 class="card-subtitle mb-2 text-muted">Code: VA33TXRJ5</h6>
+					<p class="card-text">
+					  <div class="options d-flex flex-fill">
+					  
+						<div class="quickview-content">
+					  <div class="quantity">
+						<div class="input-group">
+							<div class="button minus">
+								<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+									<i class="ti-minus"></i>
+								</button>
+							</div>
+							<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="1000" value="1">
+							<div class="button plus">
+								<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+									<i class="ti-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					</div>
+					<label>Quantity / KG</label>
+					</div>
+					<div class="buy d-flex justify-content-between align-items-center">
+					  <div class="price text-success"><h5 class="mt-4">₹15/kg</h5></div>
+					   <a href="#" class="btn btn-success mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+				<div class="card">
+				  <img class="card-img" src="./images/tomato.jpeg" alt="Vans">
+				  <div class="card-img-overlay d-flex justify-content-end">
+					<a href="#" class="card-link text-danger like">
+					  <i class="fas fa-heart"></i>
+					</a>
+				  </div>
+				  <div class="card-body">
+					<h6 class="card-title">Tomato(tamatar)</h6>
+					<h6 class="card-subtitle mb-2 text-muted">Code: VA38TXRJ9</h6>
+					<p class="card-text">
+					  <div class="options d-flex flex-fill">
+					  
+						<div class="quickview-content">
+					  <div class="quantity">
+						<div class="input-group">
+							<div class="button minus">
+								<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+									<i class="ti-minus"></i>
+								</button>
+							</div>
+							<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="1000" value="1">
+							<div class="button plus">
+								<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+									<i class="ti-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					</div>
+					<label>Quantity / KG</label>
+					</div>
+					<div class="buy d-flex justify-content-between align-items-center">
+					  <div class="price text-success"><h5 class="mt-4">₹25/kg</h5></div>
+					   <a href="#" class="btn btn-success mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+
+			</div>
+		  </div>
+	</div>
+	
+</section>
+
+<!--end-->
+
+	
+	<!-- Start Footer Area -->
+	<footer class="footer">
+		<!-- Footer Top -->
+		<div class="footer-top section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer about">
+							<div class="logo">
+								<a href="index.html">LOGO</a>
+							</div>
+							<p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue,  magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+							<p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+91 9568974586</a></span></p>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4>Information</h4>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Faq</a></li>
+								<li><a href="#">Terms & Conditions</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Help</a></li>
+							</ul>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4>Customer Service</h4>
+							<ul>
+								<li><a href="#">Payment Methods</a></li>
+								<li><a href="#">Money-back</a></li>
+								<li><a href="#">Returns</a></li>
+								<li><a href="#">Shipping</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer social">
+							<h4>Get In Touch</h4>
+							<!-- Single Widget -->
+							<div class="contact">
+								<ul>
+									<li>Clock Tower Dehradun.</li>
+									<li>Uttarakhand.</li>
+									<li>info@ddunvegStore.com</li>
+									<li>+91 8745789658</li>
+								</ul>
+							</div>
+							<!-- End Single Widget -->
+							<ul>
+								<li><a href="#"><i class="ti-facebook"></i></a></li>
+								<li><a href="#"><i class="ti-twitter"></i></a></li>
+								<li><a href="#"><i class="ti-flickr"></i></a></li>
+								<li><a href="#"><i class="ti-instagram"></i></a></li>
+							</ul>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Footer Top -->
+		<div class="copyright">
+			<div class="container">
+				<div class="inner">
+					<div class="row">
+						<div class="col-lg-6 col-12">
+							<div class="left">
+								<p>Copyright © 2020 <a href="" target="_blank">ddunvegstore.com</a>  -  All Rights Reserved.</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-12">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- /End Footer Area -->
+ 
+	<!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		var submitButton1 = document.getElementsByClassName('submitButton')[1];
+		var submitButton2 = document.getElementsByClassName('submitButton')[2];
+		var vendorPage1 = document.getElementsByClassName('vendor-page1')[0];
+		var vendorPage2 = document.getElementsByClassName('vendor-page2')[0];
+		let fname = document.getElementsByName('fname')[0];
+		let lname = document.getElementsByName('lname')[0];
+		let email = document.getElementsByName('email')[0];
+		let phone = document.getElementsByName('phone')[0];
+		let shopName = document.getElementsByName('shopName')[0];
+
+		function showNav() {
+			var x = document.getElementsByClassName('mobile-nav')[0];
+			swapDisplay(x);
+		}
+
+		function swapDisplay( element ) {
+			if(element.classList.contains('hide')) {
+				element.classList.remove('hide');
+				element.classList.add('show');
+			} else {
+				element.classList.remove('show');
+				element.classList.add('hide');
+			}
+		}
+
+		submitButton1.addEventListener('click', (e)=> {
+			console.log("clicked");
+			e.preventDefault();
+			//validate input
+			if(
+				fname.value.length && 
+				lname.value.length &&
+				email.value.length &&
+				phone.value.length 
+			) {
+				swapDisplay(vendorPage1);
+				swapDisplay(vendorPage2);
+			} else {
+				alert("fill complete details")
+			}
+			//make AJAX fetch request
+
+			
+		})
+	</script>
+</body>
+</html>
